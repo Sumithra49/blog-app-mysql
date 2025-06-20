@@ -34,6 +34,9 @@ A full-stack blog application built using the MERN stack (MongoDB, Express.js, R
 - DELETE	/api/posts/:id	Delete a post
 
   # All post
+
+  ![image](https://github.com/user-attachments/assets/953b4504-d606-4d08-8580-b49ca15f281b)
+
   ![image](https://github.com/user-attachments/assets/0122aff8-795f-41e7-a78a-d86b80d6578c)
   ![image](https://github.com/user-attachments/assets/0fc9195f-2bf7-49ac-8ace-155a5c1fedb3)
   ![image](https://github.com/user-attachments/assets/727087ae-49d3-4938-8a20-a579ab5c262a)
