@@ -9,7 +9,7 @@ function NewPost({ token }) {
 
   const handlePost = async () => {
     try {
-      await axios.post("http://localhost:8080/api/posts", form, {
+      await axios.post("https://blog-app-mysql-4hrx.onrender.com/api/posts", form, {
         headers: { Authorization: `Bearer ${token}` },
       });
       navigate("/");

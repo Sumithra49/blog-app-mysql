@@ -9,7 +9,7 @@ function EditPost({ token }) {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:8080/api/posts/${id}`)
+      .get(`https://blog-app-mysql-4hrx.onrender.com/api/posts/${id}`)
       .then((res) => {
         setForm({ title: res.data.title, content: res.data.content });
       })
@@ -19,7 +19,7 @@ function EditPost({ token }) {
   const handleUpdate = async () => {
     try {
       await axios.put(
-        `http://localhost:8080/api/posts/${id}`,
+        `https://blog-app-mysql-4hrx.onrender.com/api/posts/${id}`,
         { ...form },
         {
           headers: {

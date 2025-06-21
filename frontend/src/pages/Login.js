@@ -9,7 +9,7 @@ function Login({ setUser, setToken }) {
 
   const handleLogin = async () => {
     try {
-      const res = await axios.post("http://localhost:8080/api/auth/login", form);
+      const res = await axios.post("https://blog-app-mysql-4hrx.onrender.com/api/auth/login", form);
       setUser(res.data.user);
       setToken(res.data.token);
       navigate("/");

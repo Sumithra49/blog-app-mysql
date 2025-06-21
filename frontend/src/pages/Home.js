@@ -9,7 +9,7 @@ function Home({ user, token }) {
 
   useEffect(() => {
     axios
-      .get("http://localhost:8080/api/posts")
+      .get("https://blog-app-mysql-4hrx.onrender.com/api/posts")
       .then((res) => setPosts(res.data))
       .catch((err) => {
         console.error("Failed to fetch posts", err);
@@ -19,7 +19,7 @@ function Home({ user, token }) {
 
   const handleDelete = async (postId) => {
     try {
-      await axios.delete(`http://localhost:8080/api/posts/${postId}`, {
+      await axios.delete(`https://blog-app-mysql-4hrx.onrender.com/api/posts/${postId}`, {
         headers: {
           Authorization: `Bearer ${token}`,
         },

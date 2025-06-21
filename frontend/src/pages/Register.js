@@ -7,7 +7,7 @@ function Register() {
 
   const handleRegister = async () => {
     try {
-      await axios.post("http://localhost:8080/api/auth/register", form);
+      await axios.post("https://blog-app-mysql-4hrx.onrender.com/api/auth/register", form);
       alert("Registered! Now you can log in.");
     } catch (err) {
       alert("Registration failed");
