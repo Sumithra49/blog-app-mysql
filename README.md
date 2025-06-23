@@ -1,5 +1,5 @@
 # blog-app-mysql
-A full-stack blog application built using the MERN stack (MongoDB, Express.js, React.js, Node.js) with user authentication, post creation, update, deletion, and proper access control.
+A full-stack blog application built using the  (MySql, Express.js, React.js, Node.js) with user authentication, post creation, update, deletion, and proper access control.
  # deployment link:
  - frontend:https://blog-app-mysql.vercel.app/
  - backend:https://blog-app-mysql-4hrx.onrender.com
