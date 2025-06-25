@@ -5,7 +5,8 @@ A full-stack blog application built using the  (MySql, Express.js, React.js, Nod
  - backend:https://blog-app-mysql-4hrx.onrender.com
 
 # folder structure
-![image](https://github.com/user-attachments/assets/5ee471c0-86d6-4bab-b657-fb02a8d60ab0)
+![image](https://github.com/user-attachments/assets/c806b8d7-cd1b-4b70-a383-fead1e40627a)
+
 ![image](https://github.com/user-attachments/assets/2fd52156-8bb8-4471-b8fa-ce765c8c5bf6)
 
 
@@ -35,6 +36,17 @@ A full-stack blog application built using the  (MySql, Express.js, React.js, Nod
 - POST	/api/posts	Create a new post
 - PUT	/api/posts/:id	Update a post
 - DELETE	/api/posts/:id	Delete a post
+
+  ## 🛠 Export MySQL Database (optional)
+
+To export your database safely using `mysqldump`:
+
+```bash
+mysqldump --set-gtid-purged=OFF --single-transaction \
+  -h <your_host> \
+  -u <your_username> \
+  -p <your_database_name> > db-export.sql
+
 
   # All post
 
