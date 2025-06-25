@@ -1,14 +1,17 @@
 import React, { useState } from "react";
 import axios from "axios";
 import "../styles/register.css";
+import { useNavigate } from "react-router-dom";
 
 function Register() {
   const [form, setForm] = useState({ username: "", email: "", password: "" });
+  const navigate = useNavigate();
 
   const handleRegister = async () => {
     try {
       await axios.post("https://blog-app-mysql-4hrx.onrender.com/api/auth/register", form);
       alert("Registered! Now you can log in.");
+      navigate("/login");
     } catch (err) {
       alert("Registration failed");
     }
